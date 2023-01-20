@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container__picture{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin-bottom: 28px;
+}
+
+.dog__box{
+   height: 300px;
+   width: 30%;
+   margin: 40px 20px;
+   background: yellow;
+   font-size: 24px;
+}
+
+
+.dog__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.human__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.human__box{
+   height: 300px;
+   width: 30%;
+   margin: 40px 20px;
+   background: yellow;
+   font-size: 24px
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #007bbf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charile__logo{
+    width: 100%;
+    transform: scale (1.5);
+    padding-top: 8px;
+}
+
+.human__logo{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+
+#title{
+    height: 2rem;
+    font-size: 1.6rem;
+    margin-top: 12px;
+}
+
+#output{
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.btn{
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 0 12px;
+}
+
+.dog__btn{
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 0 12px;
+}
+
+@media (max-width:480px) {
+    .dog__box{
+        height: 350;
+        width: 70%;
+        font-size: 18px;
+        flex-direction: column;
+    }
+    .dog__container{
+        flex-direction: column;
+    }
+    .human__container{
+        flex-direction: column;
+    }
+    .human__box{
+        height: 350;
+        width: 70%;
+        font-size: 18px;
+        flex-direction: column;
+    }
+    .dog__btn{
+        margin-top: 28px;
+    }
+    .btn{
+        margin: 0 auto;
+    }
+    #output{
+        margin: 12px 0;
+    }
+
+    #title{
+        height: 1.5rem;
+        font-size: 1.5rem;
+    }
+  
+}

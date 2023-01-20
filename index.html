@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Dog Year Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="dog__box">
+        <div class="container">
+          <figure class="container__picture">
+            <img class="charile__logo" src="./Charlie.jpeg" alt="" />
+          </figure>
+        </div>
+        <div class="dog__container">
+          <label for="title"
+            >Enter your dogs age (in years) <br /><input
+              type="number"
+              id="title"
+              name="Title"
+            />
+          </label>
+          <button class="dog__btn" type="button" id="btn">Convert</button>
+        </div>
+      </div>
+      <div class="human__box">
+        <div class="container">
+          <figure class="container__picture">
+            <img class="human__logo" src="./Human.jpeg" alt="" />
+          </figure>
+        </div>
+        <div class="human__container">
+          <p>Your dog age in Human years is:</p>
+          <span id="output"></span>
+          <br />
+          <button class="btn" type="button" onclick="reload()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
